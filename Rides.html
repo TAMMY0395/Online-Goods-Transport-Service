@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>our Website</title>
+  <style>
+    body  
+    {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 0.1em 0;
+    }
+    nav {
+      background-color: #444;
+      color: white;
+      text-align: center;
+      padding: 0.8em 0;
+    }
+    nav a {
+      color: white;
+      text-decoration-line: underline;
+      margin: 0 1em;
+    }
+    nav b {
+      color: rgb(53, 205, 225);
+      text-decoration-line: underline;
+      image-orientation:initial;
+      margin: 0 1em;
+    }
+    main {
+      padding: 0em;
+    }
+    .hero {
+      background-image: url('homebackground image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: left;
+      padding: 05em 0;
+    }
+    .container {
+            background-color: rgba(8, 7, 7, 0.8); /* Add a semi-transparent white background to the content */
+            padding: 20px;
+            width: 95%;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+    .box {
+        background-color: rgba(255, 255, 255, 0.796); /* Add a semi-transparent white background to the content */
+            padding: 20px;
+            width: 95%;
+            margin: auto;
+            border-radius: 10px;
+    } 
+    
+    .villan {
+        background-color: rgb(255, 255, 255); /* Add a semi-transparent white background to the content */
+            padding: 20px;
+            width: 95%;
+            margin: auto;
+
+            border-radius: 10px;
+    }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 30%;
+            height: 20px;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #080808;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 50px;
+        }
+
+        .track-btn{
+          background-color: rgb(62, 237, 62);
+          width: 80px;
+          height: 40px;
+        }
+        
+
+        .btn-book {
+          --clr-font-main: hsla(0 0% 20% / 100);
+          --btn-bg-1: hsla(194 100% 69% / 1);
+          --btn-bg-2: hsla(217 100% 56% / 1);
+          --btn-bg-color: hsla(360 100% 100% / 1);
+          --radii: 0.5em;
+          cursor: pointer;
+          padding: 0.9em 1.4em;
+          margin-top: 30px;
+          min-width: 120px;
+          min-height: 44px;
+          font-size: var(--size, 1rem);
+          font-family: "Segoe UI", system-ui, sans-serif;
+          font-weight: 500;
+          transition: 0.8s;
+          background-size: 280% auto;
+          background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+          border: none;
+          border-radius: var(--radii);
+          color: var(--btn-bg-color);
+          box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+          }
+
+        btn-donate:hover {
+        background-position: right top;
+        }
+
+        .btn-book:is(:focus, :focus-visible, :active) {
+        outline: none;
+        box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+        .btn-book {
+         transition: linear;
+        }
+      }
+
+
+
+
+      .containers {
+            width: 70%;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .data {
+            margin-bottom: 10px;
+        }
+        .apply-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .apply-button:hover {
+            background-color: #45a049;
+        }
+        
+      
+
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      position:relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Goods Transport Services</h1>
+    <p>Efficient and Reliable Goods Transport Services.</p>
+  </header>
+  <nav>
+    <a href="driver.html">Home</a>
+    <a href="DriverAboutuspage.html">About</a>
+    <a href="driversservice.html">Serivces</a>
+    <a href="Rides.html">Rides</a>
+    <a href="Driverscontactpage.html">Contact</a>
+  </nav>
+  <main>
+    <div class="hero">
+      <div class="container">
+        <header>
+          <h1>Welcome to Goods Transport Services</h1>
+          <p>Efficient and Reliable Goods Transport Services</p>
+        </header>
+        <div class="box">
+          <div class="container">
+            <header>
+                <h1>SELECT YOUR RIDE</h1>
+            </header>
+            <div class="villan" style="color: black;">
+                <h1></h1>
+                <form action="driver_interface.php" method="post">
+
+                    <button class="apply-button" onclick="window.location.href = 'complete_order.php';">Order completed</button>
+                    
+                </form>    
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+  </div>
+  </main>
+  <footer>
+    <div class="container-footer">
+      <div class="footer-logo">
+          <h1>Online Goods Transport Service</h1>
+      </div>
+
+      <div class="address">
+        <address>
+          <img src="location.png" alt="location" width="20"height="20"> Address: Viva Institute Of Technology(VIT)<br>
+          <img src="phonecall.png" alt="phone" width="20"height="16"> Phone: +917045895350/ +917249525282<br>
+          <img src="email-solid.png" alt="email" width="20"height="12"> Email: onlinetransportservice03@gmail.com
+        </address>
+        </div>
+        
+      <div class="social-icons">
+          <a href="https://www.facebook.com/me/"><img src="facebook_733547.png" alt="Facebook" width="50" height="50"></a>
+          <a href="#"><img src="twitter_3256013.png" alt="Twitter" width="50" height="50"></a>
+          <a href="#"><img src="instagram_2111463.png" alt="Instagram" width="50" height="50"></a>
+      </div>
+  </div>
+  </footer>
+</body>
+</html>

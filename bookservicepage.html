@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods Transport Service Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: underline;
+            margin: 0 1em;
+        }
+
+        main {
+            padding: 0em;
+        }
+      .hero {
+        background-image: url('homebackground image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+        padding: 5em 0;
+      }
+          .container {
+              background-color: rgba(8, 7, 7, 0.8); /* Add a semi-transparent white background to the content */
+              padding: 20px;
+              width: 70%;
+              margin: auto;
+              border-radius: 10px;
+          }
+
+          h1 {
+    text-align: center;
+    color: #f4efef;
+}
+
+form {
+    display: grid;
+    text-align: left;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 98%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.radio-inline input[type="radio"] {
+        display: inline-block;
+        margin-right: 2px; /* Adjust spacing between radio buttons */
+    }
+
+.mb-0{
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-shadow: #333;
+}
+
+.address{
+       margin-bottom: 20px;
+      }
+
+
+
+  
+          .container-footer {
+              background-color: rgba(8, 7, 7, 0.8); /* Add a semi-transparent white background to the content */
+              padding: 20px;
+              width: 100%;
+              margin: auto;
+              border-radius: 10px;
+          }
+  
+       footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }   
+          
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Online Goods Transport Services</h1>
+        <p>Efficient and Reliable Goods Transport Services.</p>
+      </header>
+      <nav>
+        <a href="Homepage.html">Home</a>
+        <a href="aboutpage.html">About</a>
+        <a href="servicepage.html">Services</a>
+        <a href="contactpage.html">Contact</a>
+      </nav>
+
+      <main>
+        <div class="hero">
+    <div class="container">
+        <h1>Goods Transport Service Booking</h1>
+        <form action="bookservice.php" method="post">
+            <label>Vehicle Type:</label>
+            <select class="mb-0" name="vehicleType" id="vehicleType" aria-label="Default select example">
+                <option value="truck">Truck</option>
+                <option value="trailer">Trailer</option>
+                <option value="tarus">Tarus</option>
+                <option value="container">Container Vehicle</option>
+                <option value="eicher">Eicher 19ft</option>
+              </select>
+      
+          <label for="PickupLocation">Pickup Location:</label>
+          <input type="text" id="PickupLocation" name="PickupLocation" required>
+      
+          <label for="Destination">Destination:</label>
+          <input type="text" id="Destination" name="Destination" required>
+      
+          <label for="PickupDate">Pickup Date:</label>
+          <input type="date" id="PickupDate" name="PickupDate" required>
+      
+          <label for="EstimatedWeight">Estimated Weight (in kg):</label>
+          <input type="number" id="EstimatedWeight" name="EstimatedWeight" required>
+      
+          <label for="CargoType">Cargo Type:</label>
+          <input type="text" id="CargoType" name="CargoType" required>
+      
+          <label for="CompanyName">Company Name:</label>
+          <input type="text" id="CompanyName" name="CompanyName" required>
+      
+          <label for="ContactpersonsName">Contact Person's Name:</label>
+          <input type="text" id="ContactpersonsName" name="ContactpersonsName" required>
+      
+          <label for="Email">Email:</label>
+          <input type="email" id="Email" name="Email" required>
+      
+          <label for="contactNo">Contact No:</label>
+          <input type="number" id="contactNo" name="ContactNo" required>
+      
+          <label for="Comments">Additional Comments:</label>
+          <textarea id="Comments" name="Comments" rows="4"></textarea>
+      
+          <input type="submit" value="Book Now">
+      </form>
+    </div>
+    </div>
+      </main>
+
+      <footer>
+        <div class="container-footer">
+            <div class="footer-logo">
+                <h1>Online Goods Transport Service</h1>
+            </div>
+
+            <div class="address">
+                <address>
+                  <img src="location.png" alt="location" width="20"height="20"> Address: Viva Institute Of Technology(VIT)<br>
+                  <img src="phonecall.png" alt="phone" width="20"height="16"> Phone: +917045895350/ +917249525282<br>
+                  <img src="email-solid.png" alt="email" width="20"height="12"> Email: onlinetransportservice03@gmail.com
+                </address>
+                </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/me/"><img src="facebook_733547.png" alt="Facebook" width="50" height="50"></a>
+                <a href="#"><img src="twitter_3256013.png" alt="Twitter" width="50" height="50"></a>
+                <a href="#"><img src="instagram_2111463.png" alt="Instagram" width="50" height="50"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

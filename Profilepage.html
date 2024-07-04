@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 0.1em 0;
+    }
+
+    nav {
+      background-color: #444;
+      color: white;
+      text-align: center;
+      padding: 0.8em 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration-line: underline;
+      margin: 0 1em;
+    }
+
+    nav b {
+      color: rgb(53, 205, 225);
+      text-decoration-line: underline;
+      margin: 0 1em;
+    }
+
+    main {
+      padding: 0em;
+    }
+
+    .hero {
+      background-image: url('homebackground image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: left;
+      padding: 05em 0;
+    }
+
+    .container {
+      background-color: rgba(8, 7, 7, 0.8); /* Add a semi-transparent white background to the content */
+      padding: 20px;
+      width: 95%;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      border: 1px solid #080808;
+      border-radius: 4px;
+    }
+
+    .profile-section {
+      padding: 2em 0;
+      
+    }
+
+    .profile-section .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    .profile-section h2 {
+      text-align: center;
+    }
+
+    .profile-section form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-section form label {
+      margin-top: 10px;
+    }
+
+    .profile-section form input[type="file"] {
+      margin-top: 10px;
+    }
+
+    .profile-section form textarea {
+      margin-top: 10px;
+      height: 100px;
+    }
+
+    .profile-section form button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .profile-section form button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      position:relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .container-footer {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo h1 {
+      margin: 0;
+    }
+
+    .social-icons img {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Goods Transport Services</h1>
+    <p>Efficient and Reliable Goods Transport Services.</p>
+  </header>
+  <nav>
+    <a href="Homepage.html">Home</a>
+    <a href="aboutpage.html">About</a>
+    <a href="servicepage.html">Services</a>
+    <a href="contactpage.html">Contact</a>
+    <a href="bookservicepage.html">Select service</a>
+    <b href="index.html"><img src="login-img.png" alt="login" width="20" height="22">Login</b>
+  </nav>
+  <main>
+    <div class="hero">
+      <div class="container">
+        <h1>Welcome to Goods Transport Services</h1>
+        <p>Efficient and Reliable Goods Transport Services</p>
+      
+    
+    <div class="profile-section">
+      <div class="container">
+        <h2>User Profile</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+          <label for="profile-photo">Profile Photo:</label>
+          <input type="file" id="profile-photo" name="profile-photo" accept="image/*" required>
+          <button type="submit">Upload Photo</button>
+        </form>
+        <?php if(isset($username)): ?>
+        <p><strong>Username:</strong> <?php echo $username; ?></p>
+        <p><strong>Email:</strong> <?php echo $email; ?></p>
+        <p><strong>Phone:</strong> <?php echo $phone; ?></p>
+        <p><strong>Address:</strong> <?php echo $address; ?></p>
+        <?php else: ?>
+        <p>No user found</p>
+        <?php endif; ?>
+        
+      </div>
+    </div>
+      </div>
+    </div>
+
+    <!-- Rest of the sections remain the same -->
+    <footer>
+      <div class="container-footer">
+        <div class="footer-logo">
+            <h1>Online Goods Transport Service</h1>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/me/"><img src="facebook_733547.png" alt="Facebook" width="50" height="50"></a>
+            <a href="#"><img src="twitter_3256013.png" alt="Twitter" width="50" height="50"></a>
+            <a href="#"><img src="instagram_2111463.png" alt="Instagram" width="50" height="50"></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>our Website</title>
+  <style>
+    body  
+    {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      background: fixed;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 0.1em 0;
+    }
+    nav {
+      background-color: #444;
+      color: white;
+      text-align: center;
+      padding: 0.8em 0;
+    }
+    nav a {
+      color: white;
+      text-decoration-line: underline;
+      margin: 0 1em;
+    }
+    
+    .login-link {
+        color: rgb(53, 205, 225); /* Change to your desired color */
+        text-decoration-line: underline;
+        image-orientation:initial;
+        margin: 0 1em;
+    }
+    main {
+      padding: 0em;
+    }
+    .hero {
+      background-image: url('homebackground image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: left;
+      padding: 05em 0;
+    }
+    .container {
+            background-color: rgba(8, 7, 7, 0.8); /* Add a semi-transparent white background to the content */
+            padding: 20px;
+            width: 95%;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 30%;
+            height: 20px;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #080808;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 50px;
+        }
+
+        .track-btn{
+          background-color: rgb(62, 237, 62);
+          width: 80px;
+          height: 40px;
+        }
+
+        
+
+        .btn-book {
+          --clr-font-main: hsla(0 0% 20% / 100);
+          --btn-bg-1: hsla(194 100% 69% / 1);
+          --btn-bg-2: hsla(217 100% 56% / 1);
+          --btn-bg-color: hsla(360 100% 100% / 1);
+          --radii: 0.5em;
+          cursor: pointer;
+          padding: 0.9em 1.4em;
+          margin-top: 30px;
+          min-width: 30%;
+          min-height: 44px;
+          font-size: var(--size, 1rem);
+          font-family: "Segoe UI", system-ui, sans-serif;
+          font-weight: 500;
+          transition: 0.8s;
+          background-size: 280% auto;
+          background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+          border: none;
+          border-radius: var(--radii);
+          color: var(--btn-bg-color);
+          box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+
+          margin-left: 35%;
+          margin-right: auto;
+          }
+
+        btn-donate:hover {
+        background-position: right top;
+        }
+
+        .btn-book:is(:focus, :focus-visible, :active) {
+        outline: none;
+        box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+        .btn-book {
+         transition: linear;
+        }
+      }
+       
+      .submit-btn{
+        height: 35px;
+        margin-bottom: 40px;
+        background-color: rgb(62, 237, 62) ;
+        font-weight:2px;
+        border-radius: 5px;
+      }
+
+      .address{
+       margin-bottom: 20px;
+      }
+
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      position:relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Goods Transport Services</h1>
+    <p>Efficient and Reliable Goods Transport Services.</p>
+  </header>
+  <nav>
+    <a href="Homepage.html">Home</a>
+    <a href="aboutpage.html">About</a>
+    <a href="servicepage.html">Services</a>
+    <a href="contactpage.html">Contact</a>
+    <a href="index.html" class="login-link">
+      <img src="login-img.png" alt="login" width="20" height="22">Login
+      <?php echo $email; ?> <!-- Display user's email as the login button text --></a>
+  </nav>
+  <main>
+    <div class="hero">
+      <div class="container">
+        <header>
+          <h1>Welcome to Goods Transport Services</h1>
+          <p>Efficient and Reliable Goods Transport Services</p>
+  
+      </header>
+      <section id="Homeimg">
+      <img src="livetracking image.jpg" alt="Truck Fleet" width="100%" height="600px">
+      </section>
+      
+      <section id="services">
+          <h2><img src="right-arrow_3248150.png" alt="arrow-bullet" width="40"height="25">Our Services</h2>
+          <div class="service">
+            <ul>
+              <h3>Domestic Freight Shipping or transport</h3>
+              <li><p>Goods Transport Services offers reliable and cost-effective domestic freight shipping services. Whether it's a single package or a full truckload, we have the right solution for your needs.</p></li>
+              <h3>national Shipping</h3>
+              <li><p>Take your business all over India with our seamless national shipping services. We handle customs clearance and ensure timely delivery to over 29 states all over India</p></li>
+              <h3>Last-Mile Delivery</h3>
+              <li><p>Our specialized last-mile delivery service ensures your goods reach their final destination swiftly and securely. We guarantee customer satisfaction from start to finish.</p></li>
+              <h3>Live Tracking</h3>
+              <li><p>Real-time updates provided to users, allowing them to monitor the current location and estimated arrival time of their booked transport.</p></li>
+            </ul>
+          </div>
+          
+      </section>
+      
+      <section id="why-choose">
+          <h2><img src="right-arrow_3248150.png" alt="arrow-bullet" width="40"height="25">Why Choose Us?</h2>
+          <ul style="font-size: 120%;">
+              <li>Reliability: We pride ourselves on our punctuality and commitment to meeting delivery deadlines.</li>
+              <li>Safety: Your goods are secured and monitored throughout the entire transportation process.</li>
+              <li>Customer-Centric: Our dedicated customer support team is available 24/7 to address any queries or concerns.</li>
+          </ul>
+          <a href="#quote-form" class="cta-button">Get a Quote</a>
+      </section>
+      <div class="bookbutton">
+      <section id="button-now">
+        <form action="bookservicepage.html">
+                  
+          <button class="btn-book" type="Book a Service" style="font-size: 120%;">Book a Service</button>
+        </form>
+    </section>
+    </div>
+      
+      <section id="fleet">
+          <h2><img src="right-arrow_3248150.png" alt="arrow-bullet" width="40"height="25">Our Fleet</h2>
+          <div class="fleet-images">
+              <img src="Fleet 1.jpg" alt="Truck 1" width="33%" height="20%" style="border: #f349ed;"><img src="Fleet 2.jpg" alt="Truck 2" width="33%" height="20%" style="border: #f349ed;"><img src="Fleet 4.jpg" alt="Truck 3" width="33%" height="30%" style="border: #f349ed;">
+              <!-- Add more images of the fleet -->
+          </div>
+      </section>
+      
+      <section id="track-shipment">
+          <h2><img src="right-arrow_3248150.png" alt="arrow-bullet" width="40"height="25">Track Your Shipment</h2>
+          <form action="example.html">
+              <label for="shipment-id">Enter Shipment ID:</label>
+              <input type="text" id="shipment-id" name="shipment-id" required>
+              <button class="track-btn" type="submit" style="font-size: large;">Track</button>
+          </form>
+      </section>
+      
+      <section id="testimonials">
+          <h2><img src="right-arrow_3248150.png" alt="arrow-bullet" width="40"height="25">Testimonials</h2>
+          <div class="testimonial">
+              <blockquote>
+                <ul>
+                  <li><p>"Online Goods Transport Services has been an integral partner in our supply chain. Their professionalism and efficiency have significantly improved our operations."</p></li>
+                  <cite>- John Doe, CEO, XYZ Company</cite>
+                </ul>
+              </blockquote>
+          </div>
+          <div class="testimonial">
+              <blockquote>
+                <ul>
+                  <li><p>"I was amazed at how smoothly my national shipment was handled. Online Goods Transport Services made the process stress-free and transparent."</p></li>
+                  <cite>- Jane Smith, Small Business Owner</cite>
+                </ul>
+              </blockquote>
+          </div>
+      </section>
+      
+      <section id="blog">
+          <h2><img src="right-arrow_3248150.png" alt="arrow-bullet" width="40"height="25">Blog and Resources</h2>
+          <article>
+              <h3>The Future of Freight Shipping: Trends and Innovations</h3>
+              <p>Explore the latest trends and innovations in the world of freight shipping and how they're shaping the industry.</p>
+              <a href="blog-post.html">Read More</a>
+          </article>
+      </section>
+      
+      <section  id="contact">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button class="submit-btn" type="submit">Send Message</button>
+        </form>
+        
+    </section>
+     
+      
+      </div>
+  </div>
+  </main>
+  <footer>
+    <div class="container-footer">
+      <div class="footer-logo">
+          <h1>Online Goods Transport Service</h1>
+      </div>
+
+      <div class="address">
+      <address>
+        <img src="location.png" alt="location" width="20"height="20"> Address: Viva Institute Of Technology(VIT)<br>
+        <img src="phonecall.png" alt="phone" width="20"height="16"> Phone: +917045895350/ +917249525282<br>
+        <img src="email-solid.png" alt="email" width="20"height="12"> Email: onlinetransportservice03@gmail.com
+      </address>
+      </div>
+
+      <div class="social-icons">
+          <a href="https://www.facebook.com/me/"><img src="facebook_733547.png" alt="Facebook" width="50" height="50"></a>
+          <a href="#"><img src="twitter_3256013.png" alt="Twitter" width="50" height="50"></a>
+          <a href="#"><img src="instagram_2111463.png" alt="Instagram" width="50" height="50"></a>
+      </div>
+  </div>
+  </footer>
+</body>
+</html>
